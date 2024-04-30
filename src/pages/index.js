@@ -116,7 +116,7 @@ export default function Home() {
       <div className="flex flex-col items-center w-screen ">
         <div className=" flex place-items-center ">
           <div className="flex flex-col items-center">
-            <h1 className="text-4xl font-bold text-center mt-40">{Q[0]?.kanji}</h1>
+            <h1 className="text-4xl font-bold text-center mt-20">{Q[0]?.kanji}</h1>
             <h2 className="text-2xl font-semibold text-center">{Q[0]?.reading}</h2>
           </div>
         </div>
