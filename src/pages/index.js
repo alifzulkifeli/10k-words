@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { Joystick } from 'react-joystick-component';
 import data from './data.json';
 import toast, { Toaster } from 'react-hot-toast';
+import Link from 'next/link';
 
 
 export default function Home() {
@@ -116,8 +117,10 @@ export default function Home() {
       <div className="flex flex-col items-center w-screen ">
         <div className=" flex place-items-center ">
           <div className="flex flex-col items-center">
-            <h1 className="text-4xl font-bold text-center mt-20">{Q[0]?.kanji}</h1>
+            <a href={Q[0]?.link}>
+              <h1 className="text-4xl font-bold text-center mt-20">{Q[0]?.kanji}</h1>
             <h2 className="text-2xl font-semibold text-center">{Q[0]?.reading}</h2>
+            </a>
           </div>
         </div>
 
